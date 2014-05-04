@@ -8,7 +8,8 @@
         <div class="panel-body">
           <dl>
             <dt>Movie</dt>
-            <dd><%= @role.movie_id %></dd>
+            <dd><%= Movie.find(@role.movie_id).name  %></dd>
+
 
             <dt>Actor</dt>
             <dd><%= @role.actor_id %></dd>
