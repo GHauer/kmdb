@@ -22,8 +22,7 @@ class QuestionsController < ApplicationController
 
     # Your Ruby goes here.
 
-    #@number_of_movies_directed_by_first_movie_director = Movies.count
-    #Role.find(params[:id])
+    @number_of_movies_directed_by_first_movie_director = Movie.where({"director_id"=>1}).count
 
   end
 
